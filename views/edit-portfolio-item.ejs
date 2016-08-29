@@ -1,0 +1,18 @@
+<% include /partials/header %>
+
+<div class="container well text-center">
+    
+    <img src="https://i.imgflip.com/19lpbg.jpg">
+    <h3>Edit Portfolio Item</h3>
+
+    <form method="POST" action="/portfolio/<%=portfolioItem._id%>?_method=PUT">
+        <input type="text" value="<%=portfolioItem.title%>" name="portfolio[title]">
+        <input type="text" value="<%=portfolioItem.image%>" name="portfolio[image]">
+        <input type="text" value="<%=portfolioItem.description%>" name="portfolio[description]">
+        <input type="text" value="<%=portfolioItem.link%>" name="portfolio[link]">
+        <button class="btn btn-warning btn-xs">Edit</button>
+    </form>
+
+</div>
+
+<% include /partials/footer %>

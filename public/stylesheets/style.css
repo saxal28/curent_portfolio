@@ -1,0 +1,228 @@
+body {
+    font-family: Comfortaa;
+}
+
+.navbar-default {
+    margin-bottom: 0;
+}
+
+.thumbnail {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.show-thumbnail {
+    width: 100%;
+}
+
+.skill {
+    width: 90%;
+    /*background:orange;*/
+    height: auto;
+    padding:10px;
+    margin: 10 auto;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.sub-skill {
+    width: 100%;
+    margin:0 auto;
+}
+
+.skill-image {
+    width:250px;
+    height:250px;
+    /*float:left;*/
+}
+
+.skill-sub-image {
+    width:100px;
+    height:100px;
+    /*float:left;*/
+}
+
+.profile-picture {
+    /*width: 25%;*/
+    width: 250px;
+    height: 250px;
+    border-radius: 200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    
+}
+
+.jumbotron {
+    margin-top:0;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+span {
+    font-size: 2em;
+    padding-left: 10px;
+}
+
+#image-header {
+    width:100%;
+}
+
+h1 {
+    margin-top: 300px;
+    font-size: 5em;
+    font-family: Special Elite;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h2 {
+    text-align: center;
+    font-family: Coming Soon;
+    font-size: 4em;
+    text-shadow: 2px 2px 4px #000000;
+    color: white;
+}
+
+h3 {
+    font-family: Special Elite;
+    font-size: 3em;
+}
+
+h4 {
+    font-family: Coming Soon;
+    /*font-size: 2em;*/
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.5em;
+    font-family: Coming Soon;
+    font-weight: 600;
+    text-align: left;
+    text-indent: 50px;
+}
+
+ul {
+    font-size: 1.3em;
+    color: gray;
+}
+
+.jumbotron.home {
+    height:100%;
+}
+
+html,body {
+    height:100%;
+}
+
+.special,.special .jumbotron {
+    height:100%;
+}
+
+.skills-header{
+    height:100%;
+    background: url(https://hd.unsplash.com/photo-1457305237443-44c3d5a30b89);
+    background-attachment: fixed;
+    background-size: cover;
+    position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 60px;
+}
+
+
+.home-header{
+    height:100%;
+    background: url(https://hd.unsplash.com/photo-1471666875520-c75081f42081);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: center;
+}
+
+.contact-header{
+    height:100%;
+    background: url(https://hd.unsplash.com/photo-1453090643118-eae60f5bc58a);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: center;
+}
+
+.portfolio-header{
+    height:100%;
+    background: url(https://hd.unsplash.com/photo-1454165205744-3b78555e5572);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: center;
+    margin-bottom: 60px;
+}
+
+.bio-header{
+    height:100%;
+    background: url(https://hd.unsplash.com/photo-1447069387593-a5de0862481e);
+    background-attachment: fixed;
+    background-size: cover;
+    position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 60px;
+}
+
+.learning-cue {
+    list-style: none;
+    font-size: 1.7em;
+    color: black;
+    font-family: Special Elite;
+    font-weight: 600;
+}
+
+.btn-default {
+    font-size: 25px;
+    margin: 5px;
+    border-radius: 100px;
+}
+
+.btn-resume {
+    margin-top: 30px;
+    width: 220px;
+}
+
+.btn-box {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#show-image {
+    width: 100%;
+}
+
+.bio-text {
+    background: url(http://www.myfreetextures.com/wp-content/uploads/2011/06/an-old-and-worn-parchment-paper.jpg);
+    width: 90%;
+    padding:40px;
+}
+
+#profile-container {
+    margin: 80px auto;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: red;
+}
+
+.inline {
+    display:inline;
+}
+
+#row1 {
+    background: green;
+}
+
+.paragraph-text {
+    margin: 0 12%;
+}

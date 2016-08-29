@@ -1,0 +1,26 @@
+<% include /partials/header %>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="thumbnail show-thumbnail">
+                <img id="show-image"src="<%=portfolioItem.image%>">
+                <div class="caption text-center">
+                    <h4><%=portfolioItem.title%></h4>
+                    <h6><%=portfolioItem.description%></h6>
+                    
+                    <!--<a class="btn btn-sm btn-warning" href="/portfolio/<%=portfolioItem._id%>/edit">Edit</a>-->
+                    <a class="btn btn-sm btn-primary" href="/portfolio">Back</a>
+                    <a class="btn btn-sm btn-primary" href="<%= portfolioItem.link %>">Play!</a>
+        
+                    <!--delete form-->
+                    <!--<form method="post" class="inline" action="/portfolio/<%=portfolioItem._id%>?_method=DELETE">-->
+                    <!--    <button class="btn btn-sm btn-danger">Delete</button>-->
+                    <!--</form>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% include /partials/footer %>
