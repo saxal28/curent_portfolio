@@ -7,7 +7,12 @@ var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
 var mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost/portfolio");
+
+//local database
+// mongoose.connect("mongodb://localhost/portfolio");
+//MONGOLABS ONLINE DATABASE
+mongoose.connect("mongodb://saxal28:gatorade2@ds019856.mlab.com:19856/portfolio_alan_sax")
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
