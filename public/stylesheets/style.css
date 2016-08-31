@@ -1,5 +1,6 @@
 body {
     font-family: Comfortaa;
+    background: #394448;
 }
 
 .navbar-default {
@@ -13,7 +14,8 @@ body {
 }
 
 .show-thumbnail {
-    width: 100%;
+    margin-top: 50px;
+    width: 80%;
 }
 
 .skill {
@@ -202,8 +204,11 @@ html,body {
 
 .bio-text {
     background: url(http://www.myfreetextures.com/wp-content/uploads/2011/06/an-old-and-worn-parchment-paper.jpg);
-    width: 90%;
-    padding:40px;
+    width: 60%;
+    padding:10px;
+    min-width: 400px;
+    box-shadow: 10px 10px 10px black;
+    font-size: 20px;
 }
 
 #profile-container {
@@ -213,6 +218,11 @@ html,body {
 .completed {
     text-decoration: line-through;
     color: red;
+}
+
+.progress {
+    color:green;
+    text-decoration: line-through;
 }
 
 .inline {
