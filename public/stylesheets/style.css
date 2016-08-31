@@ -71,8 +71,8 @@ span {
 }
 
 h1 {
-    margin-top: 300px;
-    font-size: 5em;
+    margin-top: 250px;
+    font-size: 4em;
     font-family: Special Elite;
     color: white;
     text-align: center;
@@ -82,7 +82,7 @@ h1 {
 h2 {
     text-align: center;
     font-family: Coming Soon;
-    font-size: 4em;
+    font-size: 3em;
     text-shadow: 2px 2px 4px #000000;
     color: white;
 }
@@ -125,7 +125,7 @@ html,body {
 
 .skills-header{
     height:100%;
-    background: url(https://hd.unsplash.com/photo-1457305237443-44c3d5a30b89);
+    background: url(http://i.imgur.com/VZSdVvZ.jpg);
     background-attachment: fixed;
     background-size: cover;
     position: center;
@@ -136,7 +136,7 @@ html,body {
 
 .home-header{
     height:100%;
-    background: url(https://hd.unsplash.com/photo-1471666875520-c75081f42081);
+    background: url(http://i.imgur.com/yZJnNkK.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -145,7 +145,7 @@ html,body {
 
 .contact-header{
     height:100%;
-    background: url(https://hd.unsplash.com/photo-1453090643118-eae60f5bc58a);
+    background: url(http://i.imgur.com/lOvBDrq.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -154,7 +154,7 @@ html,body {
 
 .portfolio-header{
     height:100%;
-    background: url(https://hd.unsplash.com/photo-1454165205744-3b78555e5572);
+    background: url(http://i.imgur.com/aLF86AG.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -164,7 +164,7 @@ html,body {
 
 .bio-header{
     height:100%;
-    background: url(https://hd.unsplash.com/photo-1447069387593-a5de0862481e);
+    background: url(http://i.imgur.com/6gMmjK5.jpg);
     background-attachment: fixed;
     background-size: cover;
     position: center;
