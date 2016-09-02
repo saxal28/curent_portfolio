@@ -1,6 +1,6 @@
 body {
-    font-family: Raleway;
-    background: #dddddd;
+    font-family: Chelsea Market;
+    background: #252525;
 }
 
 .navbar-default {
@@ -78,7 +78,7 @@ span {
 .title {
     padding-top: 20%;
     font-size: 6em;
-    font-family: Alfa Slab One;
+    font-family: Chelsea Market;
     color: white;
     text-align: center;
     text-shadow: 2px 2px 4px black;
@@ -86,7 +86,7 @@ span {
 
 .sub-header {
     text-align: center;
-    font-family: Permanent Marker;
+    font-family: Chelsea Market;
     font-size: 3em;
     text-shadow: 2px 2px 4px #000000;
     color: gray;
@@ -152,7 +152,7 @@ html,body {
 
 .contact-header{
     height:100%;
-    background: url(http://i.imgur.com/lOvBDrq.jpg);
+    background: url(https://hd.unsplash.com/photo-1472419551702-dc4862cad8f9);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -186,9 +186,15 @@ html,body {
 }
 
 .btn-default {
-    font-size: 25px;
+    font-size: 20px;
     margin: 5px;
     border-radius: 100px;
+}
+
+.btn-default:hover {
+    background:#00e710;
+    color:white;
+    border: 1px solid #00e710;
 }
 
 .btn-resume {
@@ -212,12 +218,12 @@ html,body {
     min-width: 400px;
     box-shadow: 10px 10px 10px black;
     font-size: 24px;
-    font-family: Raleway;
+    font-family: Chelsea Market;
 }
 
 .bio-subtitles {
     text-align: center;
-    font-family: Permanent Marker;
+    font-family: Chelsea Market;
     font-size: 2em;
     text-shadow: 2px 2px 4px #000000;
     color: white;
@@ -252,11 +258,18 @@ html,body {
 }
 
 .skills-title {
-    font-family: Permanent Marker;
+    font-family: Coming Soon;
     color: white;
+    font-size:3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .container-fluid {
     padding-left: 0px;
     padding-right: 0px;
+}
+
+.play-button {
+    text-align: right;
 }

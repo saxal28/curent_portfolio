@@ -9,12 +9,15 @@
 
 <% portfolios.forEach(function(item) { %>
 
-        <div class="col-md-12">
+        <div class="col-md-6">
             <div class="thumbnail">
                 <img src="<%=item.image%>">
                 <div class="caption text-center">
-                    <h4><%=item.title%></h4>
-                    <a href="/portfolio/<%=item._id%>">Show</a>
+                    <h3><%=item.title%></h3>
+                    <!--<a href="/portfolio/<%=item._id%>">Show</a>-->
+                    <div class="play-button">
+                        <a class="btn btn-lg btn-primary" id="play-button" target="_blank" href="<%= item.link %>">Play! <i class="fa fa-gamepad" aria-hidden="true"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
