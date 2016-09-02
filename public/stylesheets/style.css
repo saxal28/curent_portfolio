@@ -1,5 +1,5 @@
 body {
-    font-family: Comfortaa;
+    font-family: Raleway;
     background: #dddddd;
 }
 
@@ -8,14 +8,16 @@ body {
 }
 
 .thumbnail {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     margin-bottom: 50px;
+    border:none;
+    padding:0;
 }
 
 .show-thumbnail {
     margin-top: 50px;
-    width: 80%;
+    width: 95%;
 }
 
 .skill {
@@ -48,11 +50,10 @@ body {
 
 .profile-picture {
     /*width: 25%;*/
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border-radius: 200px;
-    margin: 0 auto;
-    margin-bottom: 40px;
+    margin: 5% auto;
     
 }
 
@@ -72,41 +73,45 @@ span {
     width:100%;
 }
 
-h1 {
+
+
+.title {
     padding-top: 20%;
-    font-size: 5em;
-    font-family: Special Elite;
+    font-size: 6em;
+    font-family: Alfa Slab One;
     color: white;
     text-align: center;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 4px black;
 }
 
-h2 {
+.sub-header {
     text-align: center;
-    font-family: Coming Soon;
+    font-family: Permanent Marker;
     font-size: 3em;
     text-shadow: 2px 2px 4px #000000;
-    color: white;
+    color: gray;
 }
 
-h3 {
+.page-header {
     font-family: Special Elite;
     font-size: 3em;
 }
 
-h4 {
-    font-family: Coming Soon;
-    /*font-size: 2em;*/
-    font-weight: 600;
-}
 
-p {
-    font-size: 1.5em;
-    font-family: Coming Soon;
-    font-weight: 600;
+.p-text {
+    padding-top: 5%;
+    padding-bottom: 5%;
     text-align: left;
     text-indent: 50px;
+    padding: 5% 5%;
+    margin-bottom: 0px;
 }
+
+/*p text colors*/
+.p-text-green {
+
+}
+
 
 ul {
     font-size: 1.3em;
@@ -138,7 +143,7 @@ html,body {
 
 .home-header{
     height:100%;
-    background: url(http://i.imgur.com/yZJnNkK.jpg);
+    background: url(https://hd.unsplash.com/photo-1472289065668-ce650ac443d2);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -176,10 +181,8 @@ html,body {
 
 .learning-cue {
     list-style: none;
-    font-size: 1.7em;
     color: black;
-    font-family: Special Elite;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .btn-default {
@@ -203,16 +206,31 @@ html,body {
 }
 
 .bio-text {
-    background: url(http://www.myfreetextures.com/wp-content/uploads/2011/06/an-old-and-worn-parchment-paper.jpg);
-    width: 60%;
-    padding:5px;
+    background: white;
+    background-size: cover;
+    width: 70%;
     min-width: 400px;
     box-shadow: 10px 10px 10px black;
-    font-size: 20px;
+    font-size: 24px;
+    font-family: Raleway;
+}
+
+.bio-subtitles {
+    text-align: center;
+    font-family: Permanent Marker;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px #000000;
+    color: white;
+    padding: 5%;
+    background: #50677b;
+    margin-top: 0px;
+    margin-bottom:0px;
+    width: 100%;
 }
 
 #profile-container {
-    margin: 80px auto;
+    padding: 5% auto;
+    margin-bottom: 0px;
 }
 
 .completed {
@@ -233,6 +251,12 @@ html,body {
     background: green;
 }
 
-.paragraph-text {
-    margin: 0 5%;
+.skills-title {
+    font-family: Permanent Marker;
+    color: white;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
 }

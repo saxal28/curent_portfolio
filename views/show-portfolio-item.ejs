@@ -2,16 +2,16 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12">
+        <!--<div class="col-md-12">-->
             <div class="thumbnail show-thumbnail">
                 <img id="show-image"src="<%=portfolioItem.image%>">
                 <div class="caption text-center">
                     <h3><%=portfolioItem.title%></h3>
-                    <h4><%=portfolioItem.description%></h4>
+                    <p><%=portfolioItem.description%></p>
                     
                     <!--<a class="btn btn-sm btn-warning" href="/portfolio/<%=portfolioItem._id%>/edit">Edit</a>-->
-                    <a class="btn btn-md btn-primary" href="/portfolio"><i class="fa fa-hand-o-left" aria-hidden="true"></i></a>
-                    <a class="btn btn-md btn-primary" href="<%= portfolioItem.link %>">Play!</a>
+                    <a class="btn btn-lg btn-primary" id="back-button" href="/portfolio"><i class="fa fa-hand-o-left" aria-hidden="true"></i></a>
+                    <a class="btn btn-lg btn-primary" id="play-button" href="<%= portfolioItem.link %>">Play!</a>
         
                     <!--delete form-->
                     <!--<form method="post" class="inline" action="/portfolio/<%=portfolioItem._id%>?_method=DELETE">-->
@@ -19,7 +19,7 @@
                     <!--</form>-->
                 </div>
             </div>
-        </div>
+        <!--</div>-->
     </div>
 </div>
 
