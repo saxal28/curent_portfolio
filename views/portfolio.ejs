@@ -1,5 +1,11 @@
 <% include /partials/header %>
 
+<style>
+    body {
+       background: #191919;
+    }
+</style>
+
 <div class="container-fluid portfolio-header">
         <h1 class="title">Portfolio</h1>
 </div>
@@ -16,7 +22,7 @@
                     <h3><%=item.title%></h3>
                     <!--<a href="/portfolio/<%=item._id%>">Show</a>-->
                     <div class="play-button">
-                        <a class="btn btn-lg btn-primary" id="play-button" target="_blank" href="<%= item.link %>">Play! <i class="fa fa-gamepad" aria-hidden="true"></i></a>
+                        <a class="btn btn-primary" id="play-button" target="_blank" href="<%= item.link %>"><i class="fa fa-gamepad" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
