@@ -1,5 +1,5 @@
 body {
-    font-family: Chelsea Market;
+    font-family: Raleway;
     /*background: #252525;*/
     background:white;
 }
@@ -24,7 +24,7 @@ body {
 
 .show-thumbnail {
     margin-top: 50px;
-    width: 95%;
+    width: 80%;
 }
 
 .skill {
@@ -83,7 +83,7 @@ span {
 
 
 .title {
-    padding-top: 20%;
+    padding-top: 17%;
     font-size: 6em;
     font-family: Chelsea Market;
     color: white;
@@ -106,8 +106,6 @@ span {
 
 
 .p-text {
-    padding-top: 5%;
-    padding-bottom: 5%;
     text-align: left;
     text-indent: 50px;
     padding: 5% 5%;
@@ -232,17 +230,19 @@ html,body {
 .bio-text {
     background: white;
     background-size: cover;
-    width: 70%;
+    padding:10%;
+    width: 75%;
     min-width: 350px;
     box-shadow: 10px 10px 10px black;
-    font-size: 24px;
-    font-family: Chelsea Market;
+    font-size: 20px;
+    line-height: 150%;
+    font-family: Neuton;
     border:1px solid black;
 }
 
 .bio-subtitles {
     text-align: center;
-    font-family: Chelsea Market;
+    font-family: Montserrat;
     font-size: 2em;
     color: black;
     padding: 5%;
@@ -288,4 +288,20 @@ html,body {
 
 .play-button {
     text-align: right;
+}
+
+.navbar-inverse {
+    font-size: 12px;
+}
+
+p {
+    padding: 10px 10%;
+    color:white;
+    text-align:center;
+    font-size: 17px;
+    
+}
+
+h3 {
+    color:white;
 }

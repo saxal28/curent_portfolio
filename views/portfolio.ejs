@@ -20,9 +20,10 @@
                 <img src="<%=item.image%>">
                 <div class="caption text-center">
                     <h3><%=item.title%></h3>
-                    <!--<a href="/portfolio/<%=item._id%>">Show</a>-->
+                   
                     <div class="play-button">
                         <a class="btn btn-primary" id="play-button" target="_blank" href="<%= item.link %>"><i class="fa fa-gamepad" aria-hidden="true"></i></a>
+                        <a  class="btn btn-primary"href="/portfolio/<%=item._id%>"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
