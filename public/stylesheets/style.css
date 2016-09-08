@@ -259,14 +259,9 @@ html,body {
 }
 
 .completed {
-    text-decoration: line-through;
     color: green;
 }
 
-.progress {
-    color:green;
-    text-decoration: line-through;
-}
 
 .inline {
     display:inline;
@@ -280,6 +275,13 @@ html,body {
     font-family: Poppins;
     color: black;
     font-size:3em;
+    font-weight: 300;
+}
+
+.skills-title-green {
+    font-family: Poppins;
+    color: green;
+    font-size:2em;
     font-weight: 300;
 }
 
