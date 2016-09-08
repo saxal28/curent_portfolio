@@ -1,18 +1,44 @@
 <% include /partials/header %>
 
+<style>
+    input{
+        width: 400px;
+        padding-left:8px;
+    }
+    
+    textarea {
+        width: 400px;
+        height: 400px;
+        padding-left:8px;
+    }
+</style>
+
 
 <div class="container text-center well">
     
     <img src="https://i.imgflip.com/19lpbg.jpg">
-    <h3>New Portfolio Item</h3>
+    <h2>New Portfolio Item</h2>
 
     <form method="POST" action="/portfolio">
-        <input type="text" placeholder="title" name="portfolio[title]">
-        <input type="text" placeholder= "image" name="portfolio[image]">
-        <input type="text" placeholder="description" name="portfolio[description]">
-        <input type="text" placeholder="link" name="portfolio[link]">
-        <input type="text" placeholder="github link" name="portfolio[github]">
-        <button class="btn btn-success btn-xs">Add</button>
+        <div class="form-group">
+            <input type="text" placeholder="title" name="portfolio[title]">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder= "image" name="portfolio[image]">
+        </div>
+        <div class="form-group">
+            <textarea placeholder="description" name="portfolio[description]"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="link" name="portfolio[link]">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="github link" name="portfolio[github]">
+        </div>
+        <div class="row">
+            <button class="btn btn-success btn-md">Add</button>        
+        </div>
+  
     </form>
 
 </div>

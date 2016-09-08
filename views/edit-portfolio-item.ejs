@@ -1,17 +1,50 @@
 <% include /partials/header %>
 
+<style>
+    input{
+        width: 400px;
+    }
+    
+    textarea {
+        width: 400px;
+        height: 150px;
+        padding-left:8px;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    
+    .btn-block {
+        width: 400px;
+        margin: 0px auto;
+    }
+</style>
+
 <div class="container well text-center">
     
     <img src="https://i.imgflip.com/19lpbg.jpg">
-    <h3>Edit Portfolio Item</h3>
+    <h2>Edit Portfolio Item</h2>
 
     <form method="POST" action="/portfolio/<%=portfolioItem._id%>?_method=PUT">
-        <input type="text" value="<%=portfolioItem.title%>" name="portfolio[title]">
-        <input type="text" value="<%=portfolioItem.image%>" name="portfolio[image]">
-        <input type="text" value="<%=portfolioItem.description%>" name="portfolio[description]">
-        <input type="text" value="<%=portfolioItem.link%>" name="portfolio[link]">
-        <input type="text" value="<%=portfolioItem.github%>" name="portfolio[github]">
-        <button class="btn btn-warning btn-xs">Edit</button>
+        <div class="form-group">
+             <input type="text" value="<%=portfolioItem.title%>" name="portfolio[title]">
+        </div>
+        <div class="form-group">
+            <input type="text" value="<%=portfolioItem.image%>" name="portfolio[image]">
+        </div>
+        <div class="form-group">
+            <textarea  name="portfolio[description]"><%=portfolioItem.description%></textarea>
+        </div>
+        <div class="form-group">
+            <input type="text" value="<%=portfolioItem.link%>" name="portfolio[link]">
+        </div>
+        <div class="form-group">
+            <input type="text" value="<%=portfolioItem.github%>" name="portfolio[github]">
+        </div>
+        <div class="row">
+            <button class="btn btn-warning btn-lg btn-block">Edit</button>           
+        </div>
+
     </form>
 
 </div>

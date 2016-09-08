@@ -34,9 +34,9 @@
 </div>
 
 <div class="col-md-6">
-            <h1 class="portfolio-title"><%= item.title %>
+            <a href="/portfolio/<%=item._id%>"><h1 class="portfolio-title"><%= item.title %></a>
             <div class="row">
-                <a href="<%=item.link%>"><i class="fa fa-search" aria-hidden="true"></i></a>
+                <a href="<%=item.github%>"><i class="fa fa-search" aria-hidden="true"></i></a>
             </div>
             <div class="row">
                  <a href="<%=item.link%>"><i class="fa fa-gamepad" aria-hidden="true"></i></a>
