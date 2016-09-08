@@ -4,16 +4,15 @@
         <title> Alan Sax | Web Development Portfolio</title>
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-            <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Coming+Soon|Montserrat|Poppins|Raleway" rel="stylesheet">
+            <link href='https://fonts.googleapis.com/css?family=Ubuntu|Questrial|Orbitron' rel='stylesheet' type='text/css'>
             <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
             <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-            <link href="/stylesheets/style.css" rel="stylesheet">
+            <link href="/stylesheets/weather.css" rel="stylesheet">
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </head>
-    <body>
+<body>
         
-        
-        <!--navigation bar-->
+          <!--navigation bar-->
         <nav class="navbar navbar-default navbar-inverse">
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -24,7 +23,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="/"><strong>Alan Sax</strong></a>
+              <a class="navbar-brand" href="/">Alan <i class="fa fa-bomb" aria-hidden="true"></i> Sax</a>
             </div>
         
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -45,3 +44,46 @@
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
 </nav>
+
+
+
+<div class="container-fluid">
+  <div class="weather-box-two center-block">
+    <ul>
+      <li div class="temp">
+        <h1 id="temp"></h1> </li>
+      <li id="city"></li>
+      <!--<li id="tme"></li>
+      <li id="dte"></li> -->
+      <li id="weather"></li>
+      <li><div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default"id = "toC">C</button>
+  <button type="button" class="btn btn-default" id="toF">F</button>
+</div></li>
+      <li>
+        <div class="icon center-block">
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!--<div class="geolocation center-block" id="demo">
+  </div> !-->
+</div>
+
+
+<script src="/js/weather.js"></script>
+</body>
+</html>
+
+
+<!-- notes 
+
+project checklist
+      [x] weather box
+      [x]  F/C switch
+      [] current city, state
+      [] tell if its raining/sunny/etc
+      [] changing icons representing current weather conditions
+      [] background should change according to weather
+
+-->

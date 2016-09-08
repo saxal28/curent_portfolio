@@ -1,9 +1,19 @@
 <% include /partials/header %>
 
 <style>
-    body {
-       background: #191919;
+    .container {
+        width: 95%;
     }
+    .col-md-6 {
+        padding-left:0;
+        padding-right:0;
+    }
+    
+    .well {
+        padding:0;
+        margin-bottom: 40px;
+    }
+
 </style>
 
 <div class="container-fluid portfolio-header">
@@ -11,27 +21,36 @@
 </div>
 
 <div class="container">
-        <div class="row">
+
 
 <% portfolios.forEach(function(item) { %>
 
-        <div class="col-md-6">
-            <div class="thumbnail">
-                <img src="<%=item.image%>">
-                <div class="caption text-center">
-                    <h3><%=item.title%></h3>
-                   
-                    <div class="play-button">
-                        <a class="btn btn-primary" id="play-button" target="_blank" href="<%= item.link %>"><i class="fa fa-gamepad" aria-hidden="true"></i></a>
-                        <a  class="btn btn-primary"href="/portfolio/<%=item._id%>"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="row well">
     
+<div class="col-md-6">
+    <!--this is a no-no but its the only way :(-->
+    <div style="background:url(<%= item.image %>); background-size:cover;  background-position:center" class="portfolio-container">
+    </div>
+</div>
+
+<div class="col-md-6">
+            <h1 class="portfolio-title"><%= item.title %>
+            <div class="row">
+                <a href="<%=item.link%>"><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+            <div class="row">
+                 <a href="<%=item.link%>"><i class="fa fa-gamepad" aria-hidden="true"></i></a>
+            </div>
+             </h1>
+            
+            
+</div>
+                   
+    
+    </div>
 <% }); %>
 
-    </div>
+
 
 </div>
 

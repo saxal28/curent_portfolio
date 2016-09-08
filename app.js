@@ -26,7 +26,8 @@ var portfolioSchema = new mongoose.Schema({
     title: String,
     image: String,
     description: String,
-    link: String
+    link: String,
+    github: String
 })
 
 //model setup
@@ -72,6 +73,10 @@ app.get("/portfolio", function(req, res) {
         }
     });
 });
+
+app.get("/portfolio/weather", function(req, res) {
+    res.render("weather");
+})
 
 
 //PORTFOLIO NEW ROUTE

@@ -1,5 +1,5 @@
 body {
-    font-family: Raleway;
+    font-family: Poppins;
     /*background: #252525;*/
     background:white;
 }
@@ -8,6 +8,8 @@ body {
     margin-bottom: 0;
     border-radius:0;
 }
+
+
 
 .thumbnail {
     width: 95%;
@@ -24,7 +26,7 @@ body {
 
 .show-thumbnail {
     margin-top: 50px;
-    width: 80%;
+    width: 95%;
 }
 
 .skill {
@@ -83,7 +85,7 @@ span {
 
 
 .title {
-    padding-top: 17%;
+    padding-top: 20%;
     font-size: 6em;
     font-family: Chelsea Market;
     color: white;
@@ -106,10 +108,14 @@ span {
 
 
 .p-text {
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
     text-align: left;
     text-indent: 50px;
-    padding: 5% 5%;
     margin-bottom: 0px;
+    width:70%;
+    min-width:350px;
 }
 
 ul {
@@ -132,11 +138,11 @@ html,body {
 .skills-header{
     height:100%;
     background: url(http://i.imgur.com/VZSdVvZ.jpg);
-    background-attachment: fixed;
     background-size: cover;
     position: center;
     background-repeat: no-repeat;
     margin-bottom: 60px;
+    width:100%;
 }
 
 
@@ -144,16 +150,14 @@ html,body {
     height:100%;
     background: url(http://i.imgur.com/aJUFbBZ.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     position: center;
 }
 
 .contact-header{
     height:100%;
-    background: url(http://i.imgur.com/yKQcRxX.jpg);
+    background: url(http://i.imgur.com/yZJnNkK.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     position: center;
 }
@@ -162,7 +166,6 @@ html,body {
     height:100%;
     background: url(http://i.imgur.com/aLF86AG.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     position: center;
     margin-bottom: 60px;
@@ -171,7 +174,6 @@ html,body {
 .bio-header{
     height:100%;
     background: url(http://i.imgur.com/6gMmjK5.jpg);
-    background-attachment: fixed;
     background-size: cover;
     position: center;
     background-repeat: no-repeat;
@@ -184,7 +186,9 @@ html,body {
     font-weight: 500;
     font-size: 24px;
     text-align: left;
-    margin-left:30%;
+    margin: 0 auto;
+    width:70%;
+    min-width: 350px;
 }
 
 .btn-default {
@@ -201,11 +205,11 @@ html,body {
 
 .btn-primary {
     font-size: 24px;
-    margin: 5px;
     border-radius: 100px;
     background:transparent;
     color:white;
     border:none;
+
 }
 
 .btn-primary:hover {
@@ -230,19 +234,17 @@ html,body {
 .bio-text {
     background: white;
     background-size: cover;
-    padding:10%;
-    width: 75%;
+    width: 70%;
     min-width: 350px;
     box-shadow: 10px 10px 10px black;
-    font-size: 20px;
-    line-height: 150%;
-    font-family: Neuton;
+    font-size: 25px;
+    font-family: Poppins;
     border:1px solid black;
 }
 
 .bio-subtitles {
     text-align: center;
-    font-family: Montserrat;
+    font-family: Poppins;
     font-size: 2em;
     color: black;
     padding: 5%;
@@ -275,10 +277,10 @@ html,body {
 }
 
 .skills-title {
-    font-family: Coming Soon;
+    font-family: Poppins;
     color: black;
     font-size:3em;
-    font-weight: bold;
+    font-weight: 300;
 }
 
 .container-fluid {
@@ -290,36 +292,117 @@ html,body {
     text-align: right;
 }
 
-.navbar-inverse {
-    font-size: 12px;
+.portfolio-image {
+    width: 100%;
 }
 
-p {
-    padding: 10px 10%;
+.portfolio-container {
+    width:100%;
+    height:550px;
+    background-size: cover;
+    background-position:center;
     color:white;
-    text-align:center;
-    font-size: 17px;
-    
+    text-align: center;
+    min-width: 350px;
 }
 
-h3 {
+.portfolio-title {
+    padding-top:10%;
+    opacity: .5;
+    height:480px;
+    margin-top:0px;
+    font-size:4em;
+    font-weight: 200;
+    text-align: center;
+    min-width: 350px
+    background:black;
+}
+
+.fa-search, .fa-gamepad {
+    font-size: 2.2em;
+    color:orange;
+}
+
+.fa-search {
+    padding-top:40px;
+}
+
+.fa-search:hover, .fa-gamepad:hover {
+    color:blue;
+}
+
+.facebook {
+    width:100px;
+    height:100px;
+    background:	#3726c0;
     color:white;
+    border-radius:0;
+    border:none;
+    font-size: 5em;
 }
 
-/*mobile stuff*/
-@media (max-width: 978px) {
-    .container {
-      padding:0;
-      margin:0;
-    }
-
-    body {
-      padding:0;
-    }
-
-    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
-      margin-left: 0;
-      margin-right: 0;
-      margin-bottom:0;
-    }
+.github {
+    width:100px;
+    height:100px;
+    background:#564d4a;
+    color:white;
+    border-radius:0;
+    border:none;
+    font-size: 5em;
 }
+
+.fcc {
+    width:100px;
+    height:100px;
+    background:green;
+    color:white;
+    border-radius:0;
+    border:none;
+    font-size: 5em;
+}
+
+.linkedin {
+    width:100px;
+    height:100px;
+    background:#2775ff;
+    color:white;
+    border-radius:0;
+    border:none;
+    font-size: 5em;
+}
+
+.resume {
+    width:300px;
+    height:100px;
+    background:#f24333;
+    color:white;
+    border-radius:0;
+    border:none;
+    font-size: 3em;
+    line-height:100px;
+}
+
+.facebook:hover {
+    background:#111f71;
+    border-color:#111f71;
+}
+
+.linkedin:hover {
+    background: #3726c0;
+    border-color:#3726c0;
+}
+
+.github:hover {
+    background:black;
+    border-color: black;
+}
+
+.resume:hover {
+    background:	#ba1b1d;
+    border-color:#ba1b1d;
+}
+
+strong {
+    padding-left:3px;
+}
+

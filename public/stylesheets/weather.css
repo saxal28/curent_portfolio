@@ -1,0 +1,89 @@
+body {
+  background:#191919;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.weather-box-two {
+  height: auto;
+  width: 300px;
+  margin-top: 12%;
+  padding: 20px 10px 20px 10px;
+  color: white;
+  font-size: 35px;
+  font-family: Questrial;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.style {
+  font-family: Questrial;
+  font-size: 25px;
+  color: orange;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 110px;
+  font-weight: bold;
+  margin: 0 0 30px 0;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.icon {
+  margin-top: 30px;
+  background-image: url("http://www.functionalorthoticdesign.com.au/wp-content/uploads/2015/07/efrere.png");
+  width: 150px;
+  height: 150px;
+  background-size: 150px 150px;
+}
+
+.dayTime {
+  background-image: url("http://www.pixelstalk.net/wp-content/uploads/2016/06/Night-Sky-Wallpapers-HD-For-Desktop.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+.btn-default {
+ background-color:transparent;
+ color: white;
+ font-weight:bold;
+  border:none;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 25px;
+}
+
+
+
+/*
+clowdy icon - https://cdn1.iconfinder.com/data/icons/weather-icons-6/512/clouds-512.png
+
+sunny icon - 
+https://cdn3.iconfinder.com/data/icons/picons-weather/57/06_sunny-128.png
+
+night icon -
+http://www.functionalorthoticdesign.com.au/wp-content/uploads/2015/07/efrere.png
+
+storm icon - 
+https://cdn4.iconfinder.com/data/icons/proglyphs-weather/512/Storm-512.png
+
+==============================
+
+night background - 
+http://www.pixelstalk.net/wp-content/uploads/2016/06/Night-Sky-Wallpapers-HD-For-Desktop.jpg
+
+sunny background -
+http://www.planwallpaper.com/static/images/nature-wallpapers-1.jpg
+
+storm background - 
+https://images4.alphacoders.com/831/83196.jpg
+
+clowdy background - 
+
+
+
+*/
