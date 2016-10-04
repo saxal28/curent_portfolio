@@ -1,11 +1,131 @@
-<% include /partials/header %>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Alan Sax | Web Development Portfolio</title>
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+            <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+            <!--boostrap 4-->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+            <link href="/stylesheets/animate.css" rel="stylesheet">
+            <script src="/js/jquery-viewport-checker.js"></script>
+            <link href="/stylesheets/portfolio.css" rel="stylesheet">
+    </head>
+    <body  data-spy="scroll" data-target="#navbar">
+        
+    <nav class="navbar navbar-light  navbar-fixed-top bg-faded" style="background:transparent" id="navbar">
+  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+    &#9776;
+  </button>
+  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+    <a class="navbar-brand" href="#home">Alan Sax</a>
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#bio" id="bio-button">Bio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="nav-item pull-md-right">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+        
+    <section class="header" id="home">
+        <h2 class="animated slideInLeft" >Alan Sax</h3>
+        <h5 class="animated slideInRight">Web Development Portfolio</h5>
+    </section>
+    
+    <section id="bio" class="animation-element animated slideInLeft">
+        <h2 class="text-center">Bio</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-block">
+                        <h3>Hello! Welcome to My Portfolio!</h3>
+                        <p>Hi There! I'm Alan: a developer with a passion for learning, creating, and building. Oddly enough, I didn't go to school for web development. I actually came across programming and web development unintentionally. However, I fell in love with it immediately. To me, development is the ultimate form of creative freedom. With the proper skills and knowledge, you can build whatever you want out of virtually nothing. I have enjoyed every step of my learning journey and can't wait for the future in this budding industry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                 <div class="card">
+                    <div class="card-block">
+                        <h3>Learning Goals.</h3>
+                        <p>I am always learning new skills and technologies to make me a better developer. </p>
+                        <h5>Here's My "Learning Cue" of Skills to Learn (subject to change)</h5>
+                        <ul>
+                        <li>Angular or React</li>
+                        <li>Python & Django</li>
+                        <li>Swift and iOS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="test">
+       <div class="row">
+           <div class="col-sm-5">
+               <h3>Technologies</h3>
+           </div>
+           <div class="col-sm-7">
+               <h5>HTML5 <small> | </small> CSS3 <small>|</small> JavaScript <small>|</small> Angular <small>|</small> Node <small>|</small> Express <small>|</small> MongoDB <small>|</small> Git/Github</h5>
+               <!--<img src="http://i.imgur.com/Y3vVSeI.png">-->
+           </div>
+       </div>
+    </section>
+    
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="row">
+           <div class="card-group">
+               
+               
+            <% portfolio.forEach(function(portfolio) { %>
+            <div class="col-md-4">
+            
+             <div class="card card-portfolio">
+                <img class="card-img-top" src="<%=portfolio.image%>" alt="Card image cap">
+                <div class="card-block">
+                  <h5 class="card-title"><%=portfolio.title%></h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="row button-row">
+                      <a href="<%=portfolio.link%>" class="btn  btn-outline-secondary">Play</a>
+                      <a  href="<%=portfolio.github%>" class="btn btn-outline-secondary">View Code</a>
+                  </div>
+                </div>
+              </div>
+              
+              </div>
+                
+            <% }) %>
+              
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="row">
+            
+        </div>
+    </section>
+    
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+    
+    
+        
 
-<div class="container-fluid home-header">
-    <h1 class="title">Alan Sax</h1>
-    <h2 class="sub-header">Web Portfolio</h2>
-</div>
-
-<!--<div class="container">-->
-<!--    <h1>Home</h1>-->
-<!--</div>-->
 <% include /partials/footer %>

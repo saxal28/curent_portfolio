@@ -273,6 +273,14 @@ html,body {
     background: green;
 }
 
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin:0px;
+}
+
+.row {
+    margin:0px;
+}
+
 .skills-title {
     font-family: Poppins;
     color: black;
@@ -307,7 +315,7 @@ html,body {
     background-position:center;
     color:white;
     text-align: center;
-    min-width: 350px;
+    min-width: 330px;
 }
 
 .portfolio-title {

@@ -1,0 +1,110 @@
+body {
+    color:white;
+    background:url(http://i.imgur.com/gVxHe36.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.header {
+    height:100%;
+    padding-top:20%;
+    color:white;
+}
+
+/*navbar*/
+.bg-faded {
+    background-color:none;
+}
+
+img {
+    width:100%;
+}
+
+
+section {
+    background:white;
+    padding:20px;
+    padding-top:100px;
+    padding-bottom:100px;
+    height:100%;
+	background:transparent;
+	width:80%;
+	margin: 0 auto;
+}
+
+#skills {
+    display:flex;
+	align-items: center; 
+}
+
+#home {
+    padding-top: 20%; 
+}
+
+#bio {
+    height:auto;
+}
+
+#portfolio {
+    height:auto;
+}
+
+.button-row {
+    text-align: center;
+}
+
+.col-md-4 {
+    padding:0;
+}
+
+.card-portfolio {
+    height:400px;
+    border:2px solid white;
+    margin-bottom:20px;
+}
+
+section h1 {
+    font-size:30px;
+}
+
+.footer {
+    height:10%;
+    color:white;
+    background:#333;
+}
+
+html, body {
+    height:100%;
+}
+
+.card {
+    background:transparent;
+    
+}
+
+.invisible {
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
+
+.navbar {
+    padding-left:30px;
+    padding-right:30px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color:white;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color:blue;
+}
+
+.navbar-light .navbar-brand {
+    color:white;
+}
+
+.navbar-toggler.hidden-sm-up {
+    color:white;
+}

@@ -45,7 +45,13 @@ var Portfolio = mongoose.model("Portfolio", portfolioSchema);
 
 //HOME ROUTE
 app.get("/", function(req, res) {
-    res.render("home");
+    Portfolio.find({}, function(err, portfolio) {
+        if(err) {
+            console.log(err)
+        } else {
+             res.render("home", {portfolio:portfolio});
+        }
+    })
 });
 
 //BIO INDEX ROUTE
