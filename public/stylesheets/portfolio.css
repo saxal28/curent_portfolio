@@ -3,6 +3,11 @@ body {
     background:url(http://i.imgur.com/gVxHe36.jpg);
     background-size:cover;
     background-attachment: fixed;
+    font-family: Crimson Text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Julius Sans One;
 }
 
 .header {
@@ -20,6 +25,9 @@ img {
     width:100%;
 }
 
+.card.hidden.visible.animated.fadeInUp {
+    background:rgba(0,0,0,0.6);
+}
 
 section {
     background:white;
@@ -49,8 +57,17 @@ section {
     height:auto;
 }
 
+.contact-header {
+    padding-bottom:100px;
+}
+
 .button-row {
     text-align: center;
+}
+
+.btn-outline-secondary {
+    margin:5px;
+    font-family: Julius Sans One;
 }
 
 .col-md-4 {
@@ -77,6 +94,10 @@ html, body {
     height:100%;
 }
 
+.centered-row {
+    text-align:center;
+}
+
 .card {
     background:transparent;
     
@@ -95,10 +116,8 @@ html, body {
 }
 .navbar-light .navbar-nav .nav-link {
     color:white;
-}
-
-.navbar-light .navbar-nav .active>.nav-link {
-    color:blue;
+    font-family: Julius Sans One;
+    
 }
 
 .navbar-light .navbar-brand {
@@ -107,4 +126,24 @@ html, body {
 
 .navbar-toggler.hidden-sm-up {
     color:white;
+}
+
+/*active class color*/
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .active>.nav-link:focus, .navbar-light .navbar-nav .active>.nav-link:hover, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.active:focus, .navbar-light .navbar-nav .nav-link.active:hover, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.open:focus, .navbar-light .navbar-nav .nav-link.open:hover, .navbar-light .navbar-nav .open>.nav-link, .navbar-light .navbar-nav .open>.nav-link:focus, .navbar-light .navbar-nav .open>.nav-link:hover {
+    color:yellow;
+}
+
+/*mobile background fix*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+         body{
+           /*background: url('https://hd.unsplash.com/photo-1466853817435-05b43fe45b39') no-repeat bottom center;*/
+           /*background:purple;*/
+           /*background-size: cover;*/
+            background: #134E5E; /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #134E5E , #71B280); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #134E5E , #71B280); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+         }
+         #home {
+             padding-top:60%;
+         }
 }

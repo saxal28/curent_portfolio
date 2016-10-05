@@ -8,6 +8,7 @@
             <!--boostrap 4-->
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+            <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One|Crimson+Text:400,400italic' rel='stylesheet' type='text/css'>
             <link href="/stylesheets/animate.css" rel="stylesheet">
             <script src="/js/jquery-viewport-checker.js"></script>
             <link href="/stylesheets/portfolio.css" rel="stylesheet">
@@ -19,7 +20,7 @@
     &#9776;
   </button>
   <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-    <a class="navbar-brand" href="#home">Alan Sax</a>
+    <a class="navbar-brand" href="#home"><i class="fa fa-coffee" aria-hidden="true"></i></a>
     <ul class="nav navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="#home">Home</a>
@@ -41,8 +42,8 @@
 </nav>
         
     <section class="header" id="home">
-        <h2 class="animated slideInLeft" >Alan Sax</h3>
-        <h5 class="animated slideInRight">Web Development Portfolio</h5>
+        <h1 class="animated slideInLeft" >Alan Sax</h1>
+        <h3 class="animated slideInRight">Web Development Portfolio</h3>
     </section>
     
     <section id="bio" class="animation-element animated slideInLeft">
@@ -73,13 +74,31 @@
         </div>
     </section>
     
-    <section id="skills" class="test">
-       <div class="row">
-           <div class="col-sm-5">
-               <h3>Technologies</h3>
+    <section id="skills">
+       <div class="row" style="width:100%">
+           <div class="col-sm-5" id="skills-row-left">
+               <div class="card">
+                   <div class="card-block">
+                        <h3>Technologies</h3>
+                   </div>
+               </div>
            </div>
-           <div class="col-sm-7">
-               <h5>HTML5 <small> | </small> CSS3 <small>|</small> JavaScript <small>|</small> Angular <small>|</small> Node <small>|</small> Express <small>|</small> MongoDB <small>|</small> Git/Github</h5>
+           <div class="col-sm-7"  id="skills-row-right">
+               <div class="card">
+                   <div class="card-block">
+                       <div class="row centered-row">
+                            <h5>HTML5 <small> | </small> CSS3 <small>|</small> JavaScript</h5>
+                       </div>
+                       <div class="row centered-row">
+                             <h5>Node <small>|</small> Express <small>|</small> MongoDB </h5>
+                       </div>
+                       <div class="row centered-row">
+                           <h5>Git/Github <small>|</small> Angular <small>(in progress)</small></h5>
+                       </div>
+               
+                   </div>
+               </div>
+               
                <!--<img src="http://i.imgur.com/Y3vVSeI.png">-->
            </div>
        </div>
@@ -115,17 +134,16 @@
     </section>
     
     <section id="contact">
-        <h2>Contact</h2>
-        <div class="row">
-            
+        <h2 class="contact-header">Contact Me</h2>
+        <div class="row button-row">
+            <a href="https://www.facebook.com/alan.sax" class="btn btn-outline-secondary"target="_blank">Facebook</a>
+            <a href="https://github.com/saxal28" class="btn btn-outline-secondary"target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/alan-sax-576a24b3" class="btn btn-outline-secondary" target="_blank">LinkedIn</a>
+            <a href="https://www.freecodecamp.com/saxal28" class="btn btn-outline-secondary"target="_blank">FreeCodeCamp</a>
+        </div>
+        <div class="row button-row">
+            <a href="https://github.com/saxal28/caesar_cipher/raw/master/SAX_resume.pdf"class="btn btn-outline-secondary">Download My Resume</a>
         </div>
     </section>
-    
-    <div class="footer">
-        <h2>Footer</h2>
-    </div>
-    
-    
-        
 
 <% include /partials/footer %>
