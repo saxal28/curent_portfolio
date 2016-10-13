@@ -117,7 +117,7 @@
                 <img class="card-img-top" src="<%=portfolio.image%>" alt="Card image cap">
                 <div class="card-block">
                   <h5 class="card-title"><%=portfolio.title%></h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><%=portfolio.description%></p>
                   <div class="row button-row">
                       <a href="<%=portfolio.link%>" class="btn  btn-outline-secondary">Play</a>
                       <a  href="<%=portfolio.github%>" class="btn btn-outline-secondary">View Code</a>
@@ -142,6 +142,7 @@
             <a href="https://www.freecodecamp.com/saxal28" class="btn btn-outline-secondary"target="_blank">FreeCodeCamp</a>
         </div>
         <div class="row button-row">
+            <!--when updating resume, keep same name-->
             <a href="https://github.com/saxal28/caesar_cipher/raw/master/Resume_Sax_Alan.pdf"class="btn btn-outline-secondary">Download My Resume</a>
         </div>
     </section>
