@@ -63,12 +63,12 @@ navigator.geolocation.getCurrentPosition(function(position) {
     }
     // fallback day
     if (hours < 18) {
-      $("body").css("background-image", "url(https://images.unsplash.com/photo-1414546394137-673d6fe1512e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=38bd7de157912092ca9e2196b4e2683a)")
+      $("body").css("background-image", "url(https://images.unsplash.com/photo-1465588042420-47a53c2d0320?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=f749ec7b26a6c1f61cb84a35f90614da)")
       $(".icon").css("background-image", "url(https://cdn3.iconfinder.com/data/icons/halloween-flar/2048/909_-_Half_Moon-128.png)")
     }
     // fallback night
     if (hours > 18) {
-      $("body").css("background-image", "url(https://images.unsplash.com/photo-1466853817435-05b43fe45b39?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=a3b629b7e0c4f710ce119f219ae5b874)")
+      $("body").css("background-image", "url(https://images.unsplash.com/photo-1465588042420-47a53c2d0320?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=f749ec7b26a6c1f61cb84a35f90614da)")
       $(".icon").css("background-image", "url(https://cdn3.iconfinder.com/data/icons/halloween-flar/2048/909_-_Half_Moon-128.png)")
     }
     
