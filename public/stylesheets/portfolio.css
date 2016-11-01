@@ -38,6 +38,12 @@ p {
     margin:10px auto;
 }
 
+.skill-image {
+    height: 90px;
+    width: 90px;
+    margin:10px;
+}
+
 /*navbar*/
 .bg-faded {
     background-color:none;
@@ -103,6 +109,12 @@ section {
     margin-bottom:20px;
 }
 
+.card-text {
+    color:orange;
+    padding:0px 20px;
+    font-size:18px;
+}
+
 section h1 {
     font-size:30px;
 }
@@ -153,27 +165,41 @@ html, body {
 
 /*active class color*/
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .active>.nav-link:focus, .navbar-light .navbar-nav .active>.nav-link:hover, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.active:focus, .navbar-light .navbar-nav .nav-link.active:hover, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.open:focus, .navbar-light .navbar-nav .nav-link.open:hover, .navbar-light .navbar-nav .open>.nav-link, .navbar-light .navbar-nav .open>.nav-link:focus, .navbar-light .navbar-nav .open>.nav-link:hover {
-    color:yellow;
+    color:orange;
 }
+
+.leader {
+    padding:10px 20px;
+    font-family: Crimson Text;
+    font-size:18px;
+}
+
+
 
 
 /*mobile background fix*/
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/*@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {*/
+/*         body{*/
+           /*background: url('https://hd.unsplash.com/photo-1466853817435-05b43fe45b39') no-repeat bottom center;*/
+           /*background:purple;*/
+           /*background-size: cover;*/
 
-         #home {
-             padding-top:60%;
-         }
-        #title {
-            font-size:3em;
-        }
-        #title-subtitle {
-            font-size: 1.5em;
-        }
+/*         }*/
+/*         #home {*/
+/*             padding-top:60%;*/
+/*         }*/
+/*        #title {*/
+/*            font-size:3em;*/
+/*        }*/
+
+/*        #bio {*/
+/*            width:100%;*/
+/*        }*/
         
-}
+/*}*/
 
 /*ipad fixes*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
          body{
             background:url(http://orig15.deviantart.net/65bf/f/2012/309/7/9/minimalist_metal_wallpaper_by_malkowitch-d5k14s4.jpg);
             background-size:cover;
@@ -187,5 +213,11 @@ html, body {
          #contact {
              padding-top:24%;
          }
-}
+                 #title-subtitle {
+            font-size: 1.5em;
+        }
+        .contact-header {
+            font-size:2em;
+            text-align:center;
+        }
 }

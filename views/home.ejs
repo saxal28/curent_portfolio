@@ -52,8 +52,9 @@
             <div class="col-lg-6">
                 <div class="card">
                     <div class="card-block">
+                        <br>
                         <h3>Hello! Welcome to My Portfolio!</h3>
-                        <p>Hi There! I'm Alan: a developer with a passion for learning, creating, and building. Oddly enough, I didn't go to school for web development. I actually came across programming and web development unintentionally. However, I fell in love with it immediately. To me, development is the ultimate form of creative freedom. With the proper skills and knowledge, you can build whatever you want out of virtually nothing. I have enjoyed every step of my learning journey and can't wait for the future in this budding industry.</p>
+                        <p class="leader">Hi There! I'm Alan: a developer with a passion for learning, creating, and building. Oddly enough, I didn't go to school for web development. I actually came across programming and web development unintentionally. However, I fell in love with it immediately. To me, development is the ultimate form of creative freedom. With the proper skills and knowledge, you can build whatever you want out of virtually nothing. I have enjoyed every step of my learning journey and can't wait for the future in this budding industry.</p>
                     </div>
                 </div>
             </div>
@@ -61,12 +62,12 @@
                  <div class="card">
                     <div class="card-block">
                         <h3>Learning Goals.</h3>
-                        <p>I am always learning new skills and technologies to make me a better developer. </p>
+                        <p class="leader">I am always learning new skills and technologies to make me a better developer. </p>
                         <h5>Here's What I Plan to Learn Next</h5>
                         <ul>
-                        <li>React/Redux (in progress)</li>
-                        <li>Python (in progress)</li>
-                        <li>Swift & iOS</li>
+                        <li class="leader">React/Redux (in progress)</li>
+                        <li class="leader">Python (in progress)</li>
+                        <li class="leader">Swift & iOS</li>
                         </ul>
                     </div>
                 </div>
@@ -80,6 +81,16 @@
                <div class="card skills-card">
                    <div class="card-block text-center">
                         <h4>Technologies</h4>
+                        <hr>
+                         <div class="row centered-row">
+                           <h6>HTML5 * CSS3 * JavaScript</h5>
+                       </div>
+                       <div class="row centered-row">
+                            <h6>Node.js * Express.js * MongoDB</h5>
+                       </div>
+                       <div class="row centered-row">
+                             <h6>Git/GitHub</h5>
+                       </div>
                    </div>
                </div>
            </div>
@@ -87,14 +98,11 @@
                <div class="card skills-card">
                    <div class="card-block">
                        <div class="row centered-row">
-                            <h5>HTML5 <small> | </small> CSS3 <small>|</small> JavaScript</h5>
+                           <h4> In Progress Skills</h4>
+                           <hr>
+                           <h6> React/Redux * Python</h6>
                        </div>
-                       <div class="row centered-row">
-                             <h5>Node <small>|</small> Express <small>|</small> MongoDB </h5>
-                       </div>
-                       <div class="row centered-row">
-                           <h5>Git/Github <small>|</small> React/Redux <small>(in progress)</small></h5>
-                       </div>
+                       <!--https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png-->
                
                    </div>
                </div>
@@ -119,7 +127,7 @@
                   <h5 class="card-title" style="height:50px"><%=portfolio.title%></h5>
                   <p class="card-text" style="height:100px"><%=portfolio.description%></p>
                   <div class="row button-row">
-                      <a href="<%=portfolio.link%>" class="btn  btn-outline-secondary">Play</a>
+                      <a href="<%=portfolio.link%>" class="btn btn-outline-secondary">Play</a>
                       <a  href="<%=portfolio.github%>" class="btn btn-outline-secondary">View Code</a>
                   </div>
                 </div>
