@@ -10,8 +10,13 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Julius Sans One;
 }
 
+h4 {
+    text-align:center;
+}
+
 h2 {
     padding-bottom:20px;
+    font-size:3em;
 }
 
 #title {
@@ -24,8 +29,13 @@ p {
 
 .header {
     height:100%;
-    padding-top:20%;
     color:white;
+    padding-top:20%;
+}
+
+.skills-card {
+    max-width:500px;
+    margin:10px auto;
 }
 
 /*navbar*/
@@ -83,12 +93,12 @@ section {
     font-family: Julius Sans One;
 }
 
-.col-md-4 {
+.col-md-4, .col-lg-4 {
     padding:0;
 }
 
 .card-portfolio {
-    height:400px;
+    height:420px;
     border:2px solid white;
     margin-bottom:20px;
 }
@@ -149,15 +159,33 @@ html, body {
 
 /*mobile background fix*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+         #home {
+             padding-top:60%;
+         }
+        #title {
+            font-size:3em;
+        }
+        #title-subtitle {
+            font-size: 1.5em;
+        }
+        
+}
+
+/*ipad fixes*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
          body{
-           /*background: url('https://hd.unsplash.com/photo-1466853817435-05b43fe45b39') no-repeat bottom center;*/
-           /*background:purple;*/
-           /*background-size: cover;*/
-            background: #134E5E; /* fallback for old browsers */
-            background: -webkit-linear-gradient(to left, #134E5E , #71B280); /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to left, #134E5E , #71B280); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background:url(http://orig15.deviantart.net/65bf/f/2012/309/7/9/minimalist_metal_wallpaper_by_malkowitch-d5k14s4.jpg);
+            background-size:cover;
+           background-repeat: no-repeat;
+           background-attachment:fixed;
+           /*background:red;*/
          }
          #home {
              padding-top:60%;
          }
+         #contact {
+             padding-top:24%;
+         }
+}
 }

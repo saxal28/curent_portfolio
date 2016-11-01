@@ -49,7 +49,7 @@
     <section id="bio" class="animation-element animated slideInLeft">
         <h2 class="text-center">Bio</h2>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="card">
                     <div class="card-block">
                         <h3>Hello! Welcome to My Portfolio!</h3>
@@ -57,15 +57,15 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
                  <div class="card">
                     <div class="card-block">
                         <h3>Learning Goals.</h3>
                         <p>I am always learning new skills and technologies to make me a better developer. </p>
-                        <h5>Here's My "Learning Cue" of Skills to Learn (subject to change)</h5>
+                        <h5>Here's What I Plan to Learn Next</h5>
                         <ul>
-                        <li>React/Redux</li>
-                        <li>Python</li>
+                        <li>React/Redux (in progress)</li>
+                        <li>Python (in progress)</li>
                         <li>Swift & iOS</li>
                         </ul>
                     </div>
@@ -75,16 +75,16 @@
     </section>
     
     <section id="skills">
-       <div class="row row-centered" style="width:100%">
-           <div class="col-sm-5" id="skills-row-left">
-               <div class="card">
-                   <div class="card-block">
+       <div class="row row-centered" style="width:100%; margin:0 auto">
+           <div class="col-md-12" id="skills-row-left">
+               <div class="card skills-card">
+                   <div class="card-block text-center">
                         <h4>Technologies</h4>
                    </div>
                </div>
            </div>
-           <div class="col-sm-7"  id="skills-row-right">
-               <div class="card">
+           <div class="col-md-12"  id="skills-row-right">
+               <div class="card skills-card">
                    <div class="card-block">
                        <div class="row centered-row">
                             <h5>HTML5 <small> | </small> CSS3 <small>|</small> JavaScript</h5>
@@ -111,7 +111,7 @@
                
                
             <% portfolio.forEach(function(portfolio) { %>
-            <div class="col-md-4">
+            <div class="col-lg-4">
             
              <div class="card card-portfolio">
                 <img class="card-img-top" src="<%=portfolio.image%>" alt="Card image cap">
