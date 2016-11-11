@@ -1,17 +1,30 @@
 body {
-    color:white;
-    background:url(http://i.imgur.com/gVxHe36.jpg);
+    color:black;
+    /*background:url(http://i.imgur.com/gVxHe36.jpg);*/
+    background:white;
     background-size:cover;
     background-attachment: fixed;
     font-family: Crimson Text;
 }
 
-h1, h2, h3, h4, h5, h6 {
+
+h5, h6 {
     font-family: Julius Sans One;
+}
+
+h1, h2,  h3 {
+    font-family: Bungee Shade;
+      text-shadow: 1px 1px black;
+}
+
+#title-subtitle {
+    font-family: Reenie Beanie;
+    font-size:2em;
 }
 
 h4 {
     text-align:center;
+     font-family: Julius Sans One;
 }
 
 h2 {
@@ -21,6 +34,7 @@ h2 {
 
 #title {
     font-size:4em;
+    font-family: Bungee Shade;
 }
 
 p {
@@ -29,7 +43,7 @@ p {
 
 .header {
     height:100%;
-    color:white;
+    color:black;
     padding-top:20%;
 }
 
@@ -55,6 +69,8 @@ img {
 
 .card.hidden.visible.animated.fadeInUp {
     background:rgba(0,0,0,0.6);
+    box-shadow: 10px 10px 20px black;
+    background:white;
 }
 
 section {
@@ -97,22 +113,25 @@ section {
 .btn-outline-secondary {
     margin:5px;
     font-family: Julius Sans One;
+    color:black;
 }
 
 .col-md-4, .col-lg-4 {
-    padding:0;
+    margin-bottom:20px;
 }
 
 .card-portfolio {
     height:420px;
-    border:2px solid white;
-    margin-bottom:20px;
+    border:2px solid black;
+    margin-bottom:30px;
+    background:white;
+    
 }
 
 .card-text {
-    color:orange;
     padding:0px 20px;
     font-size:18px;
+
 }
 
 section h1 {
@@ -150,7 +169,7 @@ html, body {
     padding-right:30px;
 }
 .navbar-light .navbar-nav .nav-link {
-    color:white;
+    color:black;
     font-family: Julius Sans One;
     
 }
@@ -165,15 +184,18 @@ html, body {
 
 /*active class color*/
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .active>.nav-link:focus, .navbar-light .navbar-nav .active>.nav-link:hover, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.active:focus, .navbar-light .navbar-nav .nav-link.active:hover, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.open:focus, .navbar-light .navbar-nav .nav-link.open:hover, .navbar-light .navbar-nav .open>.nav-link, .navbar-light .navbar-nav .open>.nav-link:focus, .navbar-light .navbar-nav .open>.nav-link:hover {
-    color:orange;
+    color:red;
 }
 
-.leader {
-    padding:10px 20px;
+p.leader {
     font-family: Crimson Text;
+    padding:10px 20px;
     font-size:18px;
 }
 
+.fa-lightbulb-o {
+    font-size:1.2em;
+}
 
 
 
@@ -200,13 +222,6 @@ html, body {
 
 /*ipad fixes*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
-         body{
-            background:url(http://orig15.deviantart.net/65bf/f/2012/309/7/9/minimalist_metal_wallpaper_by_malkowitch-d5k14s4.jpg);
-            background-size:cover;
-           background-repeat: no-repeat;
-           background-attachment:fixed;
-           /*background:red;*/
-         }
          #home {
              padding-top:60%;
          }
