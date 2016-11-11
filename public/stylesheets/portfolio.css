@@ -2,6 +2,7 @@ body {
     color:black;
     /*background:url(http://i.imgur.com/gVxHe36.jpg);*/
     background:white;
+    background:url(http://hitwallpaper.com/wp-content/uploads/2013/08/man-in-a-snow-storm.png);
     background-size:cover;
     background-attachment: fixed;
     font-family: Crimson Text;
@@ -114,6 +115,14 @@ section {
     margin:5px;
     font-family: Julius Sans One;
     color:black;
+    border-color:#333;
+    background:white;
+}
+
+.btn-outline-secondary:hover {
+    border-color:black;
+    color:white;
+    background:black;
 }
 
 .col-md-4, .col-lg-4 {
@@ -131,6 +140,7 @@ section {
 .card-text {
     padding:0px 20px;
     font-size:18px;
+    border-left: 2px solid black;
 
 }
 
