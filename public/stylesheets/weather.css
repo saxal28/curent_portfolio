@@ -1,5 +1,6 @@
 body {
-  background:url(https://hd.unsplash.com/photo-1472162167628-0875e2780d0b);
+  background:#333;
+  background:url(http://i.imgur.com/wuwliL6.gif);
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
@@ -15,6 +16,10 @@ body {
   font-family:  Josefin Sans;
   text-align: center;
   text-shadow: 2px 2px 4px #000000;
+}
+
+h1#temp {
+  font-weight:bold;
 }
 
 .style {
@@ -42,7 +47,6 @@ h1 {
 }
 
 .dayTime {
-  background-image: url("http://www.pixelstalk.net/wp-content/uploads/2016/06/Night-Sky-Wallpapers-HD-For-Desktop.jpg");
   background-size: cover;
   height: 100vh;
 }
@@ -53,6 +57,17 @@ h1 {
   border:none;
   text-shadow: 2px 2px 4px #000000;
   font-size: 25px;
+}
+
+.btn-default:hover {
+  background:transparent;
+  color:#333;
+}
+
+.btn-default:active {
+  color:red;
+  background:transparent;
+  border:none;
 }
 
 

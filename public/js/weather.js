@@ -42,11 +42,11 @@ navigator.geolocation.getCurrentPosition(function(position) {
     console.log(hours)
     console.log(currentWeather)
     if (hours > 18 && currentWeather === "Clear") {
-      $("body").css("background-image", "url(https://hd.unsplash.com/reserve/oY3ayprWQlewtG7N4OXl_DSC_5225-2.jpg)")
+      $("body").css("background-image", "url(http://i.imgur.com/wuwliL6.gif)")
       $(".icon").css("background-image", "url(https://cdn3.iconfinder.com/data/icons/halloween-flar/2048/909_-_Half_Moon-128.png)")
     }
     if (hours < 18 && currentWeather === "Clear" ) {
-      $("body").css("background-image", "url(http://stock-wallpapers.com/wp-content/uploads/2014/12/25-Awosome-Nature-Wallpapers-25.jpg)")
+      $("body").css("background-image", "url(http://i.imgur.com/wuwliL6.gif)")
       $(".icon").css("background-image", "url(https://cdn3.iconfinder.com/data/icons/picons-weather/57/06_sunny-128.png)")
     }
     if (currentWeather === "Rain" ) {
@@ -63,12 +63,12 @@ navigator.geolocation.getCurrentPosition(function(position) {
     }
     // fallback day
     if (hours < 18) {
-      $("body").css("background-image", "url(https://images.unsplash.com/photo-1465588042420-47a53c2d0320?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=f749ec7b26a6c1f61cb84a35f90614da)")
+      $("body").css("background-image", "url(http://i.imgur.com/wuwliL6.gif")
       $(".icon").css("background-image", "url(https://cdn3.iconfinder.com/data/icons/halloween-flar/2048/909_-_Half_Moon-128.png)")
     }
     // fallback night
     if (hours > 18) {
-      $("body").css("background-image", "url(https://images.unsplash.com/photo-1465588042420-47a53c2d0320?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=f749ec7b26a6c1f61cb84a35f90614da)")
+      $("body").css("background-image", "url(http://i.imgur.com/wuwliL6.gif")
       $(".icon").css("background-image", "url(https://cdn3.iconfinder.com/data/icons/halloween-flar/2048/909_-_Half_Moon-128.png)")
     }
     
