@@ -116,7 +116,10 @@ section {
     font-family: Julius Sans One;
     color:black;
     border-color:#333;
+    border-left:4px solid #333;
+    border-bottom:6px solid #333;
     background:white;
+    
 }
 
 .btn-outline-secondary:hover {
