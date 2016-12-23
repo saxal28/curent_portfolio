@@ -10,6 +10,10 @@ body {
 }
 
 
+.sub-title {
+    margin-bottom:40px;
+    color:red;
+}
 
 .thumbnail {
     width: 95%;

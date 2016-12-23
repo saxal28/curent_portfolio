@@ -1,11 +1,16 @@
 body {
-    color:black;
-    /*background:url(http://i.imgur.com/gVxHe36.jpg);*/
-    background:white;
-    background:url(http://hitwallpaper.com/wp-content/uploads/2013/08/man-in-a-snow-storm.png);
+    color:white;
+    background-image:url(https://www.walldevil.com/wallpapers/a75/blue-clouds-minimalistic-wallpaper-desktop-minimalist-wallpapers.jpg);
     background-size:cover;
     background-attachment: fixed;
     font-family: Crimson Text;
+}
+
+.icon {
+    width:50px;
+    height: 50px;
+    box-shadow: 10px 10px 10px #333;
+    margin:5px;
 }
 
 
@@ -14,8 +19,9 @@ h5, h6 {
 }
 
 h1, h2,  h3 {
-    font-family: Bungee Shade;
-      text-shadow: 1px 1px black;
+    font-family: Bungee Inline;
+    text-shadow: 1px 1px black;
+    color:white;
 }
 
 #title-subtitle {
@@ -35,7 +41,7 @@ h2 {
 
 #title {
     font-size:4em;
-    font-family: Bungee Shade;
+    font-family: Bungee Inline;
 }
 
 p {
@@ -69,9 +75,10 @@ img {
 }
 
 .card.hidden.visible.animated.fadeInUp {
-    background:rgba(0,0,0,0.6);
-    box-shadow: 10px 10px 20px black;
-    background:white;
+    /*background:rgba(0,0,0,0.6);*/
+    /*box-shadow: 10px 10px 20px black;*/
+    /*background:white;*/
+    border:none;
 }
 
 section {
@@ -96,10 +103,13 @@ section {
 
 #bio {
     height:auto;
+    padding:5px;
 }
 
 #portfolio {
     height:auto;
+    width: 80%;
+    max-width:1000px;
 }
 
 .contact-header {
@@ -128,15 +138,26 @@ section {
     background:black;
 }
 
-.col-md-4, .col-lg-4 {
+.col-md-4, .col-lg-6 {
     margin-bottom:20px;
 }
 
 .card-portfolio {
-    height:420px;
     border:2px solid black;
     margin-bottom:30px;
     background:white;
+    
+}
+
+.card-block {
+    width:80%;
+    max-width:700px;
+    margin: 0 auto;
+    font-size: 25px;
+    text-align:center;
+    border: none;
+    text-shadow: none;
+    background:transparent;
     
 }
 
@@ -182,14 +203,15 @@ html, body {
     padding-right:30px;
 }
 .navbar-light .navbar-nav .nav-link {
-    color:black;
-    font-family: Julius Sans One;
+    color:white;
+    font-family: Bungee Inline;
+    font-size:20px;
     
 }
 
 /*this is the coffee cup*/
 .navbar-light .navbar-brand {
-    color:black;
+    color:white;
 }
 
 /*this is for the hamburger menu*/
@@ -200,13 +222,13 @@ html, body {
 }
 
 .navbar-toggler.hidden-sm-up:hover {
-    color:red;
+    color:blue;
 }
 
 
 /*active class color*/
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .active>.nav-link:focus, .navbar-light .navbar-nav .active>.nav-link:hover, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.active:focus, .navbar-light .navbar-nav .nav-link.active:hover, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.open:focus, .navbar-light .navbar-nav .nav-link.open:hover, .navbar-light .navbar-nav .open>.nav-link, .navbar-light .navbar-nav .open>.nav-link:focus, .navbar-light .navbar-nav .open>.nav-link:hover {
-    color:red;
+    color:#333;
 }
 
 p.leader {
@@ -259,5 +281,8 @@ p.leader {
         }
         #portfolio-title {
             font-size:2.2em;
+        }
+        body {
+            background: #003973;
         }
 }

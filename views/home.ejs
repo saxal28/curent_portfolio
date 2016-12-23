@@ -8,7 +8,7 @@
             <!--boostrap 4-->
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
-            <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One|Reenie+Beanie|Bungee+Shade|Crimson+Text' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One|Reenie+Beanie|Bungee+Shade|Bungee+Inline|Crimson+Text' rel='stylesheet' type='text/css'>
             <link href="/stylesheets/animate.css" rel="stylesheet">
             <script src="/js/jquery-viewport-checker.js"></script>
             <link href="/stylesheets/portfolio.css" rel="stylesheet">
@@ -26,13 +26,10 @@
         <a class="nav-link" href="#home">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#bio" id="bio-button">Bio</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="#skills">Skills</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#portfolio">Portfolio</a>
+        <a class="nav-link" href="#portfolio">Projects</a>
       </li>
       <li class="nav-item pull-md-right">
         <a class="nav-link" href="#contact">Contact</a>
@@ -46,91 +43,43 @@
         <h3 id="title-subtitle">Web Development Portfolio</h3>
     </section>
     
-    <section id="bio" class="animation-element animated slideInLeft">
-        <h2 class="text-center">Bio</h2>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="card">
-                    <div class="card-block">
-                        <br>
-                        <h3>Hello! Welcome to My Portfolio!</h3>
-                        <p class="leader"><strong>Hi There!</strong> I'm Alan: a developer with a passion for learning, creating, and building. Oddly enough, I didn't go to school for web development. I actually came across programming and web development unintentionally. However, I fell in love with it immediately. To me, development is the ultimate form of creative freedom. With the proper skills and knowledge, you can build whatever you want out of virtually nothing. I have enjoyed every step of my learning journey and can't wait for the future in this budding industry.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                 <div class="card">
-                    <div class="card-block">
-                        <h3>Learning Goals.</h3>
-                        <p class="leader">I am always learning new skills and technologies to make me a better developer. </p>
-                        <h3>My Learning Queue <i class="fa fa-lightbulb-o animated pulse infinite" aria-hidden="true"></i></h5>
-                        <ul>
-                        <li class="leader">React/Redux (in progress)</li>
-                        <li class="leader">Python (in progress)</li>
-                        <li class="leader">Swift & iOS</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     
     <section id="skills">
        <div class="row row-centered" style="width:100%; margin:0 auto">
            <div class="col-md-12" id="skills-row-left">
                <div class="card skills-card">
                    <div class="card-block text-center">
-                        <h3 style="text-align:center">Skills</h3>
-                        <hr>
-                         <div class="row centered-row">
-                           <h6>HTML5 * CSS3 * JavaScript</h5>
-                       </div>
-                       <div class="row centered-row">
-                            <h6>Node.js * Express.js * MongoDB</h5>
-                       </div>
-                       <div class="row centered-row">
-                             <h6>Git/GitHub</h5>
-                       </div>
+                        <img src="https://i1.wp.com/pbs.twimg.com/media/Cyhe1gkXUAAl58E.jpg?w=840&ssl=1" class="icon" style="width:150px; height:100px"/>
+                        <img src="http://nodeprogram.com/assets/images/enm.jpg" class="icon" style="height:100px; width:150px"/>
+                        <img src="https://pixels4kids.files.wordpress.com/2014/11/html_css_javascript_and_the_awesome_jquery_infographic_header.png?w=1200" class="icon" style="width:150px; height:100px"/>
+                        <img src="https://aptonic.com/blog/wp-content/uploads/2015/08/python-logo.png" class="icon" style="width:100px; height:100px" />
+                        
                    </div>
                </div>
            </div>
-           <div class="col-md-12"  id="skills-row-right">
-               <div class="card skills-card">
-                   <div class="card-block">
-                       <div class="row centered-row">
-                           <h3> In Progress Skills</h3>
-                           <hr>
-                           <h6> React/Redux * Python</h6>
-                       </div>
-                       <!--https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png-->
-               
-                   </div>
-               </div>
-               
-               <!--<img src="http://i.imgur.com/Y3vVSeI.png">-->
-           </div>
+           
        </div>
     </section>
     
     <section id="portfolio">
-        <h2 id="portfolio-title">Portfolio</h2>
+        <h2 id="portfolio-title">Projects</h2>
         <div class="row">
            <div class="card-group">
                
                
             <% portfolio.forEach(function(portfolio) { %>
-            <div class="col-lg-4">
+            <div class="col-lg-6">
             
              <div class="card card-portfolio">
-                <img class="card-img-top" src="<%=portfolio.image%>" alt="Card image cap">
-                <div class="card-block">
-                  <h5 class="card-title" style="height:50px"><%=portfolio.title%></h5>
-                  <p class="card-text" style="height:100px"><%=portfolio.description%></p>
-                  <div class="row button-row">
-                      <a href="<%=portfolio.link%>" class="btn btn-outline-secondary">Play</a>
-                      <a  href="<%=portfolio.github%>" class="btn btn-outline-secondary">View Code</a>
-                  </div>
-                </div>
+                <a href="<%=portfolio.link%>" target="_blank"><img class="card-img-top" src="<%=portfolio.image%>" alt="Card image cap"></a>
+                <!--<div class="card-block">-->
+                <!--  <h5 class="card-title" style="height:50px"><%=portfolio.title%></h5>-->
+                <!--  <p class="card-text" style="height:100px"><%=portfolio.description%></p>-->
+                <!--  <div class="row button-row">-->
+                <!--      <a href="<%=portfolio.link%>" class="btn btn-outline-secondary">Play</a>-->
+                <!--      <a  href="<%=portfolio.github%>" class="btn btn-outline-secondary">Source</a>-->
+                <!--  </div>-->
+                <!--</div>-->
               </div>
               
               </div>
