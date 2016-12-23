@@ -1,9 +1,9 @@
 // animate with scroll
 $(document).ready(function() {
-    $("#title").addClass('animated slideInLeft');
+    $("#title", "portfolio-title").addClass('animated slideInLeft');
     $("#title-subtitle").addClass('animated slideInRight');
     
-    $('#bio, .card').addClass("hidden").viewportChecker({
+    $('.card-portfolio').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated fadeInUp',
         offset: 100
        });
