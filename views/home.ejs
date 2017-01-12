@@ -69,10 +69,18 @@
                
                
             <% portfolio.forEach(function(portfolio) { %>
-            <div class="col-lg-6">
+            <div class="col-xs-12 card-col">
             
              <div class="card card-portfolio">
                 <a href="<%=portfolio.link%>" target="_blank"><img class="card-img-top" src="<%=portfolio.image%>" alt="Card image cap"></a>
+                <div class="card-content">
+                    <h3 class="card-title"><%= portfolio.title%></h3>
+                    <p class="card-text"><%=portfolio.description%></p>
+                </div>
+                <div class="button-row">
+                    <a href=<%=portfolio.link%> class="btn btn-outline-secondary"target="_blank">Play</a>
+                    <a href=<%=portfolio.github%> class="btn btn-outline-secondary"target="_blank">Source</a>
+                </div>
               </div>
               
               </div>
@@ -85,13 +93,13 @@
     
     <section id="contact">
         <h2 class="contact-header">Contact Me</h2>
-        <div class="row button-row">
+        <div class="row contact-row">
             <a href="https://www.facebook.com/alan.sax" class="btn btn-outline-secondary"target="_blank">Facebook</a>
             <a href="https://github.com/saxal28" class="btn btn-outline-secondary"target="_blank">Github</a>
             <a href="https://www.linkedin.com/in/alan-sax-576a24b3" class="btn btn-outline-secondary" target="_blank">LinkedIn</a>
             <a href="https://www.freecodecamp.com/saxal28" class="btn btn-outline-secondary"target="_blank">FreeCodeCamp</a>
         </div>
-        <div class="row button-row">
+        <div class="row contact-row">
             <!--when updating resume, keep same name-->
             <a href="https://github.com/saxal28/caesar_cipher/raw/master/Resume_Sax_Alan.pdf"class="btn btn-outline-secondary">Download My Resume</a>
         </div>
