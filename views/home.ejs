@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Alan Sax | Web Development Portfolio</title>
+        <title> Alan Sax | Front End Developer</title>
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
             <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
@@ -41,7 +41,7 @@
         
     <section class="header" id="home">
         <h1 id="title" class="animated bounceInLeft">Alan Sax</h1>
-        <h3 id="title-subtitle" class="animated bounceInRight">Web Development Portfolio</h3>
+        <h3 id="title-subtitle" class="animated bounceInRight">Front End Developer</h3>
     </section>
     
     
@@ -65,30 +65,13 @@
     <section id="portfolio">
         <h2 id="portfolio-title">Projects</h2>
         <div class="row">
-           <div class="card-group">
-               
-               
             <% portfolio.forEach(function(portfolio) { %>
-            <div class="col-xs-12 card-col">
-            
-             <div class="card card-portfolio">
-                <a href="<%=portfolio.link%>" target="_blank"><img class="card-img-top" src="<%=portfolio.image%>" alt="Card image cap"></a>
-                <div class="card-content">
-                    <h3 class="card-title"><%= portfolio.title%></h3>
-                    <p class="card-text"><%=portfolio.description%></p>
-                </div>
-                <div class="button-row">
-                    <a href=<%=portfolio.link%> class="btn btn-outline-secondary"target="_blank">Play</a>
-                    <a href=<%=portfolio.github%> class="btn btn-outline-secondary"target="_blank">Source</a>
-                </div>
-              </div>
-              
-              </div>
-                
-            <% }) %>
-              
+            <div class="col-lg-4 col-md-6 portfolio-images">
+                <a href="<%= portfolio.link %>" target="_blank"><img src='<%=portfolio.image%>' class="portfolio-image" /></a>
             </div>
+            <% }) %>
         </div>
+       
     </section>
     
     <section id="contact">
@@ -104,3 +87,31 @@
             <a href="https://github.com/saxal28/caesar_cipher/raw/master/Resume_Sax_Alan.pdf"class="btn btn-outline-secondary">Download My Resume</a>
         </div>
     </section>
+
+
+
+ <!--<div class="row">-->
+ <!--          <div class="card-group">-->
+               
+               
+ <!--           <% portfolio.forEach(function(portfolio) { %>-->
+ <!--           <div class="col-xs-12 card-col">-->
+            
+ <!--            <div class="card card-portfolio">-->
+ <!--               <a href="<%=portfolio.link%>" target="_blank"><img class="card-img-top" src="<%=portfolio.image%>" alt="Card image cap"></a>-->
+ <!--               <div class="card-content">-->
+ <!--                   <h3 class="card-title"><%= portfolio.title%></h3>-->
+ <!--                   <p class="card-text"><%=portfolio.description%></p>-->
+ <!--               </div>-->
+ <!--               <div class="button-row">-->
+ <!--                   <a href=<%=portfolio.link%> class="btn btn-outline-secondary"target="_blank">Play</a>-->
+ <!--                   <a href=<%=portfolio.github%> class="btn btn-outline-secondary"target="_blank">Source</a>-->
+ <!--               </div>-->
+ <!--             </div>-->
+              
+ <!--             </div>-->
+                
+ <!--           <% }) %>-->
+              
+ <!--           </div>-->
+ <!--       </div>-->

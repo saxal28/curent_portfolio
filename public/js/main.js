@@ -28,3 +28,5 @@ $(".btn").hover(
 }, function() {
     $(this).removeClass(" animated infinite tada")
 });
+
+// portfolio hover on images 
