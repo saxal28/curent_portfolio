@@ -15,6 +15,17 @@ body {
     margin:5px;
 }
 
+.alert{
+    padding-top:150px;
+    text-align: center;
+}
+
+
+.fa-exclamation {
+    font-size:3em;
+    color:red;
+    margin: 5px;
+}
 
 h5, h6 {
     font-family: Julius Sans One;
